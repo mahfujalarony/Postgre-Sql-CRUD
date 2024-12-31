@@ -1,8 +1,7 @@
 const express = require("express")
 const route = express.Router()
-require("dotenv").config()
 const { neon } = require("@neondatabase/serverless");
-const sql = neon(process.env.DATABASE_URL);
+const sql = neon('postgresql://testdb_owner:2tqxNL5gjscv@ep-shy-frost-a56nzjwz.us-east-2.aws.neon.tech/testdb?sslmode=require');
 
 
 // Create
